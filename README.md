@@ -5,7 +5,7 @@ In order to learn the basics of Pyarcade and a map-making program called Tiled, 
 To play, you can use ASD to move around, and space to jump. The game is not functioning well enough for the character to die when they fall off the map, or to respawn.
 This was just to get enough experience to move the character around and get a map made. 
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/jLyxkrgcnDI)
 
 # Development Environment
 
