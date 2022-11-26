@@ -1,12 +1,12 @@
 """
-Platformer Game
+Arcade Game
 """
 import arcade
 
 # Constants
 SCREEN_WIDTH = 1000
 SCREEN_HEIGHT = 650
-SCREEN_TITLE = "Platformer"
+SCREEN_TITLE = "Arcade Game"
 
 # Constants used to scale our sprites from their original size
 CHARACTER_SCALING = 1
@@ -51,7 +51,6 @@ class MyGame(arcade.Window):
         self.score = 0
 
         # Load sounds
-        self.collect_coin_sound = arcade.load_sound(":resources:sounds/coin1.wav")
         self.jump_sound = arcade.load_sound(":resources:sounds/jump1.wav")
 
         arcade.set_background_color(arcade.csscolor.CORNFLOWER_BLUE)
@@ -130,7 +129,7 @@ class MyGame(arcade.Window):
     def on_key_press(self, key, modifiers):
         """Called whenever a key is pressed."""
 
-        if key == arcade.key.UP or key == arcade.key.W or key == arcade.key.SPACE:
+        if key == arcade.key.UP or key == arcade.key.SPACE:
             if self.physics_engine.can_jump():
                 self.player_sprite.change_y = PLAYER_JUMP_SPEED
                 arcade.play_sound(self.jump_sound)
@@ -165,20 +164,6 @@ class MyGame(arcade.Window):
 
         # Move the player with the physics engine
         self.physics_engine.update()
-
-        # See if we hit any coins
-        # coin_hit_list = arcade.check_for_collision_with_list(
-        #     self.player_sprite, self.scene["Coins"]
-        # )
-
-        # Loop through each coin we hit (if any) and remove it
-        # for coin in coin_hit_list:
-        #     # Remove the coin
-        #     coin.remove_from_sprite_lists()
-        #     # Play a sound
-        #     arcade.play_sound(self.collect_coin_sound)
-        #     # Add one to the score
-        #     self.score += 1
 
         # Position the camera
         self.center_camera_to_player()
