@@ -13,13 +13,11 @@ This was made in Visual Studio Code using Python with the Pyarcade library.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 * [Simple Platformer Tutorial](https://api.arcade.academy/en/latest/examples/platform_tutorial/index.html)
 * [Built-In Resources](https://api.arcade.academy/en/latest/resources.html)
 * [Tiled Map Editor](https://www.mapeditor.org/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
 * Add death / respawning
 * Add more maps and screens
