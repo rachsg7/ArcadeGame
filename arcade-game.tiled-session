@@ -3,8 +3,9 @@
         "height": 4300,
         "width": 2
     },
-    "activeFile": "",
+    "activeFile": "testmap2.tmx",
     "expandedProjectPaths": [
+        "."
     ],
     "fileStates": {
         "testmap.tmx": {
@@ -13,6 +14,14 @@
             "viewCenter": {
                 "x": 453,
                 "y": 310
+            }
+        },
+        "testmap2.tmx": {
+            "scale": 0.5,
+            "selectedLayer": 2,
+            "viewCenter": {
+                "x": 1168,
+                "y": 764
             }
         },
         "tiles.tsx": {
@@ -27,10 +36,15 @@
     "map.lastUsedFormat": "tmx",
     "map.width": 100,
     "openFiles": [
+        "testmap.tmx",
+        "tiles.tsx",
+        "testmap2.tmx"
     ],
     "project": "arcade-game.tiled-project",
     "recentFiles": [
-        "tiles.tsx"
+        "testmap.tmx",
+        "tiles.tsx",
+        "testmap2.tmx"
     ],
     "tileset.lastUsedFormat": "tsx",
     "tileset.tileSize": {
